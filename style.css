@@ -8,7 +8,7 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    font-family: serif;
+    font-family: Georgia, serif;
 }
 
 header {
