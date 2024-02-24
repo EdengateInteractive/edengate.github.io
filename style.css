@@ -48,3 +48,14 @@ nav {
     color: white;
     text-decoration: none;
 }
+
+footer {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px 0;
+    width: 100%;
+}
+
+.box {
+    color: white;
+    text-align: center;
+}
