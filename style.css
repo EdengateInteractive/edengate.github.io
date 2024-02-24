@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Radley&display=swap');
+
 body {
     margin: 0;
     padding: 0;
@@ -8,7 +10,7 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    font-family: Georgia, serif;
+    font-family: 'Radley', serif;
 }
 
 header {
