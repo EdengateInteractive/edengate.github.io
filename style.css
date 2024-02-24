@@ -48,21 +48,3 @@ nav {
     color: white;
     text-decoration: none;
 }
-
-footer {
-    position: relative;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 20px 0;
-    width: 100%;
-}
-
-.box {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    color: white;
-    text-align: center;
-    width: 80%;
-    padding: 20px;
-}
