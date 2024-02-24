@@ -8,7 +8,7 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    font-family: 'Radley', sans-serif;
+    font-family: serif;
 }
 
 header {
