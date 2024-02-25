@@ -91,20 +91,18 @@ nav {
 }
 
 .left-layout .game-section {
-    flex-direction: row;
+    justify-content: flex-start;
 }
 
 .right-layout .game-section {
-    flex-direction: row-reverse;
+    justify-content: flex-end;
 }
 
 .left-layout .game-info {
-    left: 0;
     text-align: right;
 }
 
 .right-layout .game-info {
-    right: 0;
     text-align: left;
 }
 
