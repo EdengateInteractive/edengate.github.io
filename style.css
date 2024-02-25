@@ -108,6 +108,20 @@ nav {
     padding-right: 20px;
 }
 
+.post {
+    margin-bottom: 40px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+}
+
+.post h2 {
+    margin-top: 0;
+}
+
+.post img {
+    max-width: 100%;
+}
+
 .form-container {
     background-color: #202020;
     padding: 35px;
