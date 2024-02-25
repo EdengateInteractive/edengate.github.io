@@ -70,6 +70,29 @@ nav {
         margin-bottom: 20px;
 }
 
+.game-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.game-section img {
+    max-width: 300px;
+    margin-right: 20px;
+}
+
+.game-info {
+    flex: 1;
+}
+
+.left-layout {
+    flex-direction: row;
+}
+
+.right-layout {
+    flex-direction: row-reverse;
+}
+
 .form-container {
     background-color: #202020;
     padding: 35px;
