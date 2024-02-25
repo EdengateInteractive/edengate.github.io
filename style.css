@@ -7,9 +7,11 @@ body {
     display: flex;
     flex-direction: column;
     font-family: 'Radley', serif;
+    background-color: black;
 }
 
 header {
+    background-color: rgba(0, 0, 0, 0.5);
     padding: 20px 0;
     width: 100%;
 }
