@@ -75,6 +75,9 @@ nav {
     justify-content: center;
     align-items: center;
     margin-bottom: 40px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .game-section img {
