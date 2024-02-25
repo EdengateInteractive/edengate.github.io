@@ -45,3 +45,8 @@ nav {
     color: white;
     text-decoration: none;
 }
+
+.logo img {
+    max-width: 200px;
+    max-height: 40px;
+}
