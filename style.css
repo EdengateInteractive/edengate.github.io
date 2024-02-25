@@ -90,6 +90,14 @@ nav {
     max-width: calc(100% - 340px);
 }
 
+.left-layout .game-section {
+    flex-direction: row;
+}
+
+.right-layout .game-section {
+    flex-direction: row-reverse;
+}
+
 .left-layout .game-info {
     left: 0;
     text-align: right;
