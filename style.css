@@ -73,6 +73,7 @@ nav {
 .game-section {
     display: flex;
     justify-content: center;
+    align-items: center;
     margin-bottom: 40px;
 }
 
@@ -88,21 +89,29 @@ nav {
 }
 
 .left-layout .game-info {
-    text-align: left;
-}
-
-.right-layout .game-info {
     text-align: right;
 }
 
+.right-layout .game-info {
+    text-align: left;
+}
+
+.left-layout .game-section {
+    flex-direction: row-reverse;
+}
+
+.right-layout .game-section {
+    flex-direction: row;
+}
+
 .left-layout .game-section img {
-    margin-right: 20px;
-    margin-left: 0;
+    margin-right: 0;
+    margin-left: 20px;
 }
 
 .right-layout .game-section img {
-    margin-right: 0;
-    margin-left: 20px;
+    margin-right: 20px;
+    margin-left: 0;
 }
 
 .form-container {
