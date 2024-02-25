@@ -82,19 +82,29 @@ nav {
 
 .game-section img {
     max-width: 300px;
-    margin-right: 20px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .game-info {
     flex: 1;
+    max-width: calc(100% - 220px);
 }
 
-.left-layout {
+.left-layout .game-info {
     text-align: left;
 }
 
-.right-layout {
+.right-layout .game-info {
     text-align: right;
+}
+
+.left-layout .game-section img {
+    margin-right: 20px;
+}
+
+.right-layout .game-section img {
+    margin-left: 20px;
 }
 
 .form-container {
