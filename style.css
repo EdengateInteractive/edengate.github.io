@@ -55,6 +55,10 @@ nav {
     color: red;
 }
 
+.nav-links li a.active {
+    color: red;
+}
+
 .logo img {
     max-width: 200px;
     max-height: 200px;
