@@ -63,3 +63,8 @@ nav {
     max-width: 200px;
     max-height: 200px;
 }
+
+.content {
+        text-align: center;
+        color: white;
+}
