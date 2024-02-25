@@ -99,11 +99,11 @@ nav {
 }
 
 .left-layout .game-section {
-    flex-direction: row;
+    flex-direction: row-reverse;
 }
 
 .right-layout .game-section {
-    flex-direction: row-reverse;
+    flex-direction: row;
 }
 
 .left-layout .game-section img {
