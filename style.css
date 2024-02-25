@@ -88,6 +88,7 @@ nav {
 .game-info {
     flex: 1;
     max-width: calc(100% - 340px);
+    padding: 0 20px;
 }
 
 .left-layout .game-section {
