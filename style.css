@@ -95,7 +95,7 @@ nav {
     padding: 10px;
     margin-bottom: 10px;
     border: none;
-    border-radius: 5px;
+    border-radius: 1px;
     box-sizing: border-box;
 }
 
@@ -105,7 +105,7 @@ nav {
     background-color: #FF0000;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 1px;
     cursor: pointer;
 }
 
