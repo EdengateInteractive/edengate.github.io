@@ -95,15 +95,15 @@ nav {
 }
 
 .right-layout .game-info {
-    text-align: right;
+    text-align: left;
 }
 
 .left-layout .game-section {
-    flex-direction: row-reverse;
+    flex-direction: row;
 }
 
 .right-layout .game-section {
-    flex-direction: row;
+    flex-direction: row-reverse;
 }
 
 .left-layout .game-section img {
@@ -112,7 +112,7 @@ nav {
 }
 
 .right-layout .game-section img {
-    margin-right: 0;
+    margin-right: 600px;
     margin-left: 20px;
 }
 
