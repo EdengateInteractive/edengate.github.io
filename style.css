@@ -82,8 +82,8 @@ nav {
 
 .game-section img {
     max-width: 300px;
-    margin-right: auto;
-    margin-left: auto;
+    margin-right: 20px;
+    margin-left: 20px;
 }
 
 .game-info {
@@ -101,9 +101,11 @@ nav {
 
 .left-layout .game-section img {
     margin-right: 20px;
+    margin-left: 0;
 }
 
 .right-layout .game-section img {
+    margin-right: 0;
     margin-left: 20px;
 }
 
