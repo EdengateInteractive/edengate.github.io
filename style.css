@@ -90,22 +90,14 @@ nav {
     max-width: calc(100% - 340px);
 }
 
-.left-layout .game-section {
-    flex-direction: row;
+.left-layout .game-info {
+    left: 0;
+    text-align: right;
 }
 
-.right-layout .game-section {
-    flex-direction: row-reverse;
-}
-
-.left-layout .game-section img {
-    margin-right: 20px;
-    margin-left: 0;
-}
-
-.right-layout .game-section img {
-    margin-right: 0;
-    margin-left: 20px;
+.right-layout .game-info {
+    right: 0;
+    text-align: left;
 }
 
 .form-container {
