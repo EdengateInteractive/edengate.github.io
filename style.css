@@ -90,14 +90,6 @@ nav {
     max-width: calc(100% - 340px);
 }
 
-.left-layout .game-info {
-    text-align: left;
-}
-
-.right-layout .game-info {
-    text-align: left;
-}
-
 .left-layout .game-section {
     flex-direction: row;
 }
@@ -112,7 +104,7 @@ nav {
 }
 
 .right-layout .game-section img {
-    margin-right: 600px;
+    margin-right: 0;
     margin-left: 20px;
 }
 
