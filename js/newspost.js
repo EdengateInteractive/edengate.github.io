@@ -126,6 +126,7 @@ function updateActivePageButton() {
 }
 
 function navigateToPostPage(postId) {
+    console.log("Navigating to post page with postId:", postId);
     const url = `post.html?postData=${postId}`;
     
     window.location.href = url;
@@ -140,7 +141,6 @@ function attachPostCardClickEventListeners() {
 }
 
 function handleClick(event) {
-    console.log("Post card clicked");
     // Get the clicked post card
     const postCard = event.currentTarget;
     // Get the index of the clicked post card
