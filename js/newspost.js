@@ -15,13 +15,13 @@ let currentPage = 1; // Current page number
 
 function generatePostHTML(post) {
     let postHTML = `
-        <div class="post">
-            <div class="post-image">
+        <div class="post card">
+            <div class="post-thumbnail">
                 <img src="${post.imageUrl}" alt="${post.title} Image">
             </div>
             <div class="post-content">
-                <h2>${post.title}</h2>
-                <p>${post.description}</p>
+                <h2 class="post-title">${post.title}</h2>
+                <p class="post-description">${post.description}</p>
             </div>
         </div>`
     
