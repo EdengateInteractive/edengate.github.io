@@ -113,6 +113,17 @@ function createEllipsis() {
     return ellipsis;
 }
 
+function updateActivePageButton() {
+    const paginationButtons = document.querySelectorAll("#pagination button");
+    paginationButtons.forEach(button => {
+        if (parseInt(button.textContent) === currentPage) {
+            button.classList.add("active");
+        } else {
+            button.classList.remove("active");
+        }
+    });
+}
+
 window.onload = function() {
     fetchAndDisplayPosts();
     //displayPosts(currentPage);
