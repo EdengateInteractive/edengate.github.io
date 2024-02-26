@@ -126,8 +126,7 @@ function updateActivePageButton() {
 }
 
 function navigateToPostPage(postId) {
-    console.log("Navigating to post page with postId:", postId);
-    const url = `post.html?postData=${postId}`;
+    const url = `post.html?postId=${postId}`;
     
     window.location.href = url;
 }
