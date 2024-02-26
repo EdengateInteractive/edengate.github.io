@@ -133,9 +133,7 @@ function navigateToPostPage(postId) {
 
 function attachPostCardClickEventListeners() {
     const postCards = document.querySelectorAll('.post-card');
-    console.log("Number of post cards:", postCards.length);
     postCards.forEach(postCard => {
-        console.log("Attaching event listener to post card:", postCard);
         postCard.removeEventListener('click', handleClick);
         postCard.addEventListener('click', handleClick);
     });
