@@ -152,13 +152,13 @@ nav {
     max-height: 82px;
     overflow: hidden;
     text-overflow: ellipsis;
-    color: #000000;
+    color: white;
 }
 
 .post-description {
     margin: 0;
     font-size: 1rem;
-    color: #000000;
+    color: white;
 }
 
 @media (max-width: 1279.95px) {
