@@ -1,8 +1,8 @@
 // Sample post data (you can load this dynamically from a JSON file or an API)
-const posts = [
-    { title: "Post Title", description: "Post description goes here...", imageUrl: "images/Edengate_Interactive_Logo.png" },
+//const posts = [
+    //{ title: "Post Title", description: "Post description goes here...", imageUrl: "images/Edengate_Interactive_Logo.png" },
     // Add more posts as needed
-];
+//];
 
 const postsPerPage = 5; // Number of posts to display per page
 let currentPage = 1; // Current page number
