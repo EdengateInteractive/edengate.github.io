@@ -14,13 +14,20 @@ const postsPerPage = 4; // Number of posts to display per page
 let currentPage = 1; // Current page number
 
 function generatePostHTML(post) {
-    return `
+    let postHTML = `
         <div class="post">
             <h2>${post.title}</h2>
             <p>${post.description}</p>
-            ${post.imageUrl ? `<img src="${post.imageUrl}" alt="${post.title} Image">` : ''}
-        </div>
     `;
+    
+    // Check if the post has an image URL
+    if (post.imageUrl) {
+        postHTML += `<img src="${post.imageUrl}" alt="${post.title} Image">`;
+    }
+    
+    postHTML += `</div>`;
+    
+    return postHTML;
 }
 
 function displayPosts(page) {
