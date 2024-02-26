@@ -13,12 +13,18 @@ function fetchAndDisplayPosts() {
     fetch('json/newspost.json')
         .then(response => response.json())
         .then(data => {
+            data.forEach((post, index) => {
+                post.id = index + 1; // You can use any method to generate IDs
+            });
+            
             // Store the fetched posts data in a variable
             posts = data;
 
             // Call the functions to display posts and pagination
             displayPosts(currentPage);
             displayPagination();
+
+            attachPostCardClickEventListeners();
         })
         .catch(error => console.error('Error fetching data:', error));
 }
@@ -53,8 +59,6 @@ function displayPosts(page) {
         postElement.innerHTML = generatePostHTML(post);
         postsContainer.appendChild(postElement);
     }
-
-    attachPostCardClickEventListeners();
 }
 
 function displayPagination() {
