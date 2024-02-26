@@ -111,10 +111,11 @@ nav {
 .post {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .post-image {
-    flex: 0 0 auto;
+    flex: 0 0 calc(66.666% - 20px);;
     margin-right: 20px;
 }
 
