@@ -17,8 +17,6 @@ function fetchAndDisplayPosts() {
             // Call the functions to display posts and pagination
             displayPosts(currentPage);
             displayPagination();
-
-            attachPostCardClickEventListeners();
         })
         .catch(error => console.error('Error fetching data:', error));
 }
@@ -52,6 +50,8 @@ function displayPosts(page) {
         postElement.innerHTML = generatePostHTML(post);
         postsContainer.appendChild(postElement);
     }
+
+    attachPostCardClickEventListeners();
 }
 
 function displayPagination() {
