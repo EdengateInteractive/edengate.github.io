@@ -140,12 +140,18 @@ function attachPostCardClickEventListeners() {
 }
 
 function handleClick(event) {
-    if (event.target && event.target.classList.contains('post-card')) {
-        const postCard = event.target;
-        const postIndex = postCard.getAttribute('data-post-index');
+    // Get the clicked post card
+    const postCard = event.currentTarget;
+    // Get the index of the clicked post card
+    const postIndex = postCard.getAttribute('data-post-index');
+    // Ensure post index is valid
+    if (postIndex !== null) {
+        // Get the corresponding post object
         const post = posts[postIndex];
+        // Get postId from the post object
+        const postId = post.id;
         // Navigate to the post page
-        navigateToPostPage(post.id);
+        navigateToPostPage(postId);
     }
 }
 
