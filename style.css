@@ -108,7 +108,7 @@ nav {
     padding-right: 20px;
 }
 
-.post-container {
+.posts-container {
     display: flex;
     flex-direction: column;
     align-items: center;
