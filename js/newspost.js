@@ -140,13 +140,9 @@ function attachPostCardClickEventListeners() {
 }
 
 function handleClick(event) {
-    // Get the clicked post card
-    const postCard = event.currentTarget;
-    // Get the index of the clicked post card
-    const postIndex = postCard.getAttribute('data-post-index');
-    // Ensure post index is valid
-    if (postIndex !== null) {
-        // Get the corresponding post object
+    if (event.target && event.target.classList.contains('post-card')) {
+        const postCard = event.target;
+        const postIndex = postCard.getAttribute('data-post-index');
         const post = posts[postIndex];
         // Navigate to the post page
         navigateToPostPage(post.id);
