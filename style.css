@@ -108,12 +108,19 @@ nav {
     padding-right: 20px;
 }
 
+.post-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .post-card{
     display: flex;
     justify-content: center;
     padding: 20px;
     margin: 10px;
-    max-width: 800px;
+    width: 1200px;
+    max-width: 1200px;
     border: 1px solid #CCCCCC;
     border-radius: 4px;
     background-color: #202020;
