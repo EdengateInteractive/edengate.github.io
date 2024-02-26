@@ -4,6 +4,8 @@
     // Add more posts as needed
 //];
 
+const posts [];
+
 const postsPerPage = 5; // Number of posts to display per page
 let currentPage = 1; // Current page number
 
@@ -12,7 +14,7 @@ function fetchAndDisplayPosts() {
         .then(response => response.json())
         .then(data => {
             // Store the fetched posts data in a variable
-            const posts = data;
+            posts = data;
 
             // Call the functions to display posts and pagination
             displayPosts(currentPage);
