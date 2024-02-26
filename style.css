@@ -127,12 +127,13 @@ nav {
 }
 
 #pagination button {
-    background-color: #CCC;
+    background-color: #202020;
     color: white;
     border: none;
     padding: 10px 15px;
     margin-right: 5px;
     cursor: pointer;
+    transition: background-color 0.3s;
 }
 
 #pagination button:hover,
