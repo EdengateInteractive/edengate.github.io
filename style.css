@@ -108,12 +108,16 @@ nav {
     padding-right: 20px;
 }
 
-.post-card{
+.post-container {
     display: flex;
-    justify-content: center;
-    padding: 20px;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the cards */
+}
+
+.post-card{
+    width: 300px; /* Set a fixed width for each card */
     margin: 10px;
-    max-width: 800px;
+    padding: 20px;
     border: 1px solid #CCCCCC;
     border-radius: 4px;
     background-color: #202020;
@@ -126,18 +130,13 @@ nav {
 }
 
 .post-thumbnail {
-    flex: 0 0 auto;
-    margin-right: 20px;
-    max-width: 200px;
-    max-height: 150px;
-    border-radius: 4px;
-    overflow: hidden;
+    margin-bottom: 20px;
 }
 
 .post-thumbnail img {
-    width: 100%;
+    max-width: 100%; /* Ensure image doesn't overflow */
     height: auto;
-    object-fit: cover;
+    border-radius: 4px;
 }
 
 .post-content {
@@ -145,13 +144,13 @@ nav {
 }
 
 .post-title {
-    margin: 0;
+    margin: 0 0 15px;
     font-size: 1.5rem;
     color: white;
 }
 
 .post-description {
-    margin: 10px 0 0;
+    margin: 0;
     font-size: 1rem;
     color: white;
     line-height: 1.5;
