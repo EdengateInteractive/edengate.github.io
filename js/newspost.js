@@ -48,6 +48,8 @@ function displayPosts(page) {
     for (let i = startIndex; i < Math.min(endIndex, posts.length); i++) {
         const post = posts[i];
         const postElement = document.createElement('div');
+        postElement.classList.add('post-card');
+        postElement.setAttribute('data-post-index', i);
         postElement.innerHTML = generatePostHTML(post);
         postsContainer.appendChild(postElement);
     }
