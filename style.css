@@ -138,7 +138,7 @@ nav {
 
 #pagination button:hover,
 #pagination button.active {
-    background-color: FF0000;
+    background-color: #FF0000;
 }
 
 .form-container {
