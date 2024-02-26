@@ -2,6 +2,11 @@
 const posts = [
     { title: "Post Title 1", description: "Post description goes here...", imageUrl: "post1.jpg" },
     { title: "Post Title 2", description: "Post description goes here...", imageUrl: "post2.jpg" },
+    { title: "Post Title 3", description: "Post description goes here...", imageUrl: "post3.jpg" },
+    { title: "Post Title 4", description: "Post description goes here...", imageUrl: "post4.jpg" },
+    { title: "Post Title 5", description: "Post description goes here...", imageUrl: "post5.jpg" },
+    { title: "Post Title 6", description: "Post description goes here...", imageUrl: "post6.jpg" },
+    { title: "Post Title 7", description: "Post description goes here...", imageUrl: "post7.jpg" },
     // Add more posts as needed
 ];
 
