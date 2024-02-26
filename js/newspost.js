@@ -1,9 +1,3 @@
-// Sample post data (you can load this dynamically from a JSON file or an API)
-//const posts = [
-    //{ title: "Post Title", description: "Post description goes here...", imageUrl: "images/Edengate_Interactive_Logo.png" },
-    // Add more posts as needed
-//];
-
 let posts = [];
 
 const postsPerPage = 5; // Number of posts to display per page
@@ -54,7 +48,6 @@ function displayPosts(page) {
     for (let i = startIndex; i < Math.min(endIndex, posts.length); i++) {
         const post = posts[i];
         const postElement = document.createElement('div');
-        postElement.classList.add('post-card');
         postElement.setAttribute('data-post-index', i);
         postElement.innerHTML = generatePostHTML(post);
         postsContainer.appendChild(postElement);
@@ -162,6 +155,4 @@ function handleClick(event) {
 
 window.onload = function() {
     fetchAndDisplayPosts();
-    //displayPosts(currentPage);
-    //displayPagination();
 };
