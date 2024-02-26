@@ -15,7 +15,7 @@ let currentPage = 1; // Current page number
 
 function generatePostHTML(post) {
     let postHTML = `
-        <div class="post card">
+        <div class="post-card">
             <div class="post-thumbnail">
                 <img src="${post.imageUrl}" alt="${post.title} Image">
             </div>
