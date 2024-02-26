@@ -4,7 +4,7 @@
     // Add more posts as needed
 //];
 
-const posts;
+const posts = [];
 
 const postsPerPage = 5; // Number of posts to display per page
 let currentPage = 1; // Current page number
