@@ -48,29 +48,59 @@ function displayPagination() {
     paginationContainer.innerHTML = '';
 
     const totalPages = Math.ceil(posts.length / postsPerPage);
-    for (let i = 1; i <= totalPages; i++) {
-        const pageButton = document.createElement('button');
-        pageButton.textContent = i;
-        pageButton.addEventListener('click', () => {
-            currentPage = i;
-            displayPosts(currentPage);
-            updateActivePageButton();
-        });
-        paginationContainer.appendChild(pageButton);
+    const maxVisiblePages = 5; // Maximum number of visible page buttons
+
+    let startPage = Math.max(currentPage - Math.floor(maxVisiblePages / 2), 1);
+    let endPage = Math.min(startPage + maxVisiblePages - 1, totalPages);
+
+    // Adjust startPage and endPage if the current page is near the first or last page
+    if (endPage - startPage + 1 < maxVisiblePages) {
+        startPage = Math.max(endPage - maxVisiblePages + 1, 1);
+    }
+
+    // Add "First Page" button
+    if (currentPage > 1) {
+        addPageButton(paginationContainer, 1, "First");
+    }
+
+    // Add ellipsis before page buttons if necessary
+    if (startPage > 1) {
+        paginationContainer.appendChild(createEllipsis());
+    }
+
+    // Add page buttons
+    for (let i = startPage; i <= endPage; i++) {
+        addPageButton(paginationContainer, i, i);
+    }
+
+    // Add ellipsis after page buttons if necessary
+    if (endPage < totalPages) {
+        paginationContainer.appendChild(createEllipsis());
+    }
+
+    // Add "Last Page" button
+    if (currentPage < totalPages) {
+        addPageButton(paginationContainer, totalPages, "Last");
     }
 
     updateActivePageButton();
 }
 
-function updateActivePageButton() {
-    const paginationButtons = document.querySelectorAll("#pagination button");
-    paginationButtons.forEach(button => {
-        if (parseInt(button.textContent) === currentPage) {
-            button.classList.add("active");
-        } else {
-            button.classList.remove("active");
-        }
+function addPageButton(container, pageNumber, text) {
+    const pageButton = document.createElement('button');
+    pageButton.textContent = text;
+    pageButton.addEventListener('click', () => {
+        currentPage = pageNumber;
+        displayPosts(currentPage);
+        updateActivePageButton();
     });
+    container.appendChild(pageButton);
+}
+
+function createEllipsis() {
+    const ellipsis = document.createElement('span');
+    ellipsis.textContent = '...';
+    return ellipsis;
 }
 
 window.onload = function() {
