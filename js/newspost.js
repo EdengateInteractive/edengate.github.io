@@ -141,12 +141,23 @@ function navigateToPostPage(postId) {
 function attachPostCardClickEventListeners() {
     const postCards = document.querySelectorAll('.post-card');
     postCards.forEach(postCard => {
-        postCard.addEventListener('click', () => {
-            const postIndex = postCard.getAttribute('data-post-index');
-            const postId = posts[postIndex].id;
-            navigateToPostPage(postId);
-        });
+        postCard.removeEventListener('click', handleClick);
+        postCard.addEventListener('click', handleClick);
     });
+}
+
+function handleClick(event) {
+    // Get the clicked post card
+    const postCard = event.currentTarget;
+    // Get the index of the clicked post card
+    const postIndex = postCard.getAttribute('data-post-index');
+    // Ensure post index is valid
+    if (postIndex !== null) {
+        // Get the corresponding post object
+        const post = posts[postIndex];
+        // Navigate to the post page
+        navigateToPostPage(post.id);
+    }
 }
 
 window.onload = function() {
