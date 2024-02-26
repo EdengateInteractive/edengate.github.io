@@ -10,7 +10,7 @@ const posts = [
     // Add more posts as needed
 ];
 
-const postsPerPage = 4; // Number of posts to display per page
+const postsPerPage = 5; // Number of posts to display per page
 let currentPage = 1; // Current page number
 
 function generatePostHTML(post) {
