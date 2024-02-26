@@ -151,6 +151,7 @@ nav {
     flex: 1;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 
 .post-title {
@@ -171,7 +172,6 @@ nav {
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     text-align: left;
-    align-self: center;
 }
 
 @media (max-width: 1279.95px) {
