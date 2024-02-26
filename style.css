@@ -149,13 +149,13 @@ nav {
     max-height: 82px;
     overflow: hidden;
     text-overflow: ellipsis;
-    color: #000;
+    color: #000000;
 }
 
 .post-description {
     margin: 0;
     font-size: 1rem;
-    color: #000;
+    color: #000000;
 }
 
 @media (max-width: 1279.95px) {
