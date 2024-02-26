@@ -16,16 +16,24 @@ let currentPage = 1; // Current page number
 function generatePostHTML(post) {
     let postHTML = `
         <div class="post">
-            <h2>${post.title}</h2>
-            <p>${post.description}</p>
     `;
     
     // Check if the post has an image URL
     if (post.imageUrl) {
-        postHTML += `<img src="${post.imageUrl}" alt="${post.title} Image">`;
+        postHTML += `
+            <div class="post-image">
+                <img src="${post.imageUrl}" alt="${post.title} Image">
+            </div>
+        `;
     }
     
-    postHTML += `</div>`;
+    postHTML += `
+            <div class="post-content">
+                <h2>${post.title}</h2>
+                <p>${post.description}</p>
+            </div>
+        </div>
+    `;
     
     return postHTML;
 }
