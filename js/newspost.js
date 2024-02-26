@@ -1,12 +1,12 @@
 // Sample post data (you can load this dynamically from a JSON file or an API)
 const posts = [
     { title: "Post Title 1", description: "Post description goes here...", imageUrl: "images/Edengate_Interactive_Logo.png" },
-    { title: "Post Title 2", description: "Post description goes here..." },
-    { title: "Post Title 3", description: "Post description goes here..." },
-    { title: "Post Title 4", description: "Post description goes here..." },
-    { title: "Post Title 5", description: "Post description goes here..." },
-    { title: "Post Title 6", description: "Post description goes here..." },
-    { title: "Post Title 7", description: "Post description goes here..." },
+    { title: "Post Title 2", description: "Post description goes here...", imageUrl: "images/Edengate_Interactive_Logo.png" },
+    { title: "Post Title 3", description: "Post description goes here...", imageUrl: "images/Edengate_Interactive_Logo.png" },
+    { title: "Post Title 4", description: "Post description goes here...", imageUrl: "images/Edengate_Interactive_Logo.png" },
+    { title: "Post Title 5", description: "Post description goes here...", imageUrl: "images/Edengate_Interactive_Logo.png" },
+    { title: "Post Title 6", description: "Post description goes here...", imageUrl: "images/Edengate_Interactive_Logo.png" },
+    { title: "Post Title 7", description: "Post description goes here...", imageUrl: "images/Edengate_Interactive_Logo.png" },
     // Add more posts as needed
 ];
 
