@@ -129,7 +129,7 @@ function updateActivePageButton() {
 }
 
 function navigateToPostPage(postId) {
-    const url = `post.html?postData=${postData}`;
+    const url = `post.html?postData=${postId}`;
 
     // Navigate to the new page
     window.location.href = url;
