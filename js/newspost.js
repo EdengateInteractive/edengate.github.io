@@ -46,6 +46,7 @@ function displayPosts(page) {
     for (let i = startIndex; i < Math.min(endIndex, posts.length); i++) {
         const post = posts[i];
         const postElement = document.createElement('div');
+        postElement.classList.add('post-card');
         postElement.setAttribute('data-post-index', i);
         postElement.innerHTML = generatePostHTML(post);
         postsContainer.appendChild(postElement);
@@ -140,17 +141,11 @@ function attachPostCardClickEventListeners() {
 }
 
 function handleClick(event) {
-    // Get the clicked post card
     const postCard = event.currentTarget;
-    // Get the index of the clicked post card
     const postIndex = postCard.getAttribute('data-post-index');
-    // Ensure post index is valid
     if (postIndex !== null) {
-        // Get the corresponding post object
         const post = posts[postIndex];
-        // Get postId from the post object
         const postId = post.id;
-        // Navigate to the post page
         navigateToPostPage(postId);
     }
 }
