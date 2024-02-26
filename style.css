@@ -122,6 +122,23 @@ nav {
     max-width: 100%;
 }
 
+#pagination {
+    margin-top: 20px;
+}
+
+#pagination button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+#pagination button.active {
+    background-color: FF0000;
+}
+
 .form-container {
     background-color: #202020;
     padding: 35px;
