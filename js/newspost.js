@@ -53,6 +53,8 @@ function displayPosts(page) {
         postElement.innerHTML = generatePostHTML(post);
         postsContainer.appendChild(postElement);
     }
+
+    attachPostCardClickEventListeners();
 }
 
 function displayPagination() {
@@ -123,6 +125,28 @@ function updateActivePageButton() {
         } else {
             button.classList.remove("active");
         }
+    });
+}
+
+function navigateToPostPage(post) {
+    // Encode the post data as a JSON string to pass it as a query parameter
+    const postData = encodeURIComponent(JSON.stringify(post));
+
+    // Construct the URL with the post data as a query parameter
+    const url = `post.html?postData=${postData}`;
+
+    // Navigate to the new page
+    window.location.href = url;
+}
+
+function attachPostCardClickEventListeners() {
+    const postCards = document.querySelectorAll('.post-card');
+    postCards.forEach(postCard => {
+        postCard.addEventListener('click', () => {
+            const postIndex = postCard.getAttribute('data-post-index');
+            const post = posts[postIndex];
+            navigateToPostPage(post);
+        });
     });
 }
 
