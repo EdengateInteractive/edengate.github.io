@@ -118,7 +118,7 @@ nav {
 }
 
 .post-image {
-    flex: 0 0 calc(66.666% - 20px);;
+    flex: 0 0 calc(66.666% - 20px);
     margin-right: 20px;
 }
 
@@ -129,6 +129,11 @@ nav {
 
 .post-content {
     flex: 1;
+}
+
+.post-content h2,
+.post-content p {
+    margin-top: 0;
 }
 
 #pagination {
