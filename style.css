@@ -109,15 +109,27 @@ nav {
 }
 
 .post-card{
-    display: flex;
-    margin-bottom: 20px;
-    border-radius: 8px;
+    padding: 20px;
     overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-top: 1px solid #CCCCCC;
+    border-radius: 4px;
+    background-color: transparent;
+}
+
+.post-card:hover {
+    transform: translateX(-7px);
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.18);
 }
 
 .post-thumbnail {
-    flex: 0 0 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 24px;
+    max-width: 276px;
+    max-height: 176px;
+    border-radius: 4px;
+    overflow: hidden;
 }
 
 .post-thumbnail img {
@@ -128,21 +140,43 @@ nav {
 
 .post-content {
     flex: 1;
-    padding: 20px;
-    background-color: #fff;
 }
 
 .post-title {
     margin-top: 0;
-    margin-bottom: 10px;
-    font-size: 24px;
+    margin-bottom: 15px;
+    font-size: 2.25rem;
+    max-height: 82px;
+    overflow: hidden;
+    text-overflow: ellipsis;
     color: #000;
 }
 
 .post-description {
     margin: 0;
-    font-size: 16px;
+    font-size: 1rem;
     color: #000;
+}
+
+@media (max-width: 1279.95px) {
+    .post-thumbnail {
+        max-width: 209px;
+        max-height: 133px;
+    }
+}
+
+@media (max-width: 599.95px) {
+    .post-thumbnail {
+        max-width: 79px;
+        max-height: 50px;
+        margin-right: 10px;
+    }
+}
+
+@media (max-width: 599.95px) {
+    .post-description {
+        display: none;
+    }
 }
 
 #pagination {
