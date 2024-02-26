@@ -162,7 +162,7 @@ nav {
 }
 
 .post-description {
-    margin: 10px 0 0;
+    margin: 0;
     font-size: 1.2rem;
     color: white;
     line-height: 1.5;
@@ -172,6 +172,7 @@ nav {
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     text-align: left;
+    margin-bottom: 60px;
 }
 
 @media (max-width: 1279.95px) {
