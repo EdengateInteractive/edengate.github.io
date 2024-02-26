@@ -109,18 +109,22 @@ nav {
 }
 
 .post {
-    margin-bottom: 40px;
-    border-bottom: 1px solid #ccc;
-    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
 }
 
-.post h2 {
-    margin-top: 0;
+.post-image {
+    flex: 0 0 auto;
+    margin-right: 20px;
 }
 
-.post img {
+.post-image img {
     max-width: 300px;
     height: auto;
+}
+
+.post-content {
+    flex: 1;
 }
 
 #pagination {
