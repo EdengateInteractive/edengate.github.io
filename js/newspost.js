@@ -1,37 +1,25 @@
 // Sample post data (you can load this dynamically from a JSON file or an API)
 const posts = [
     { title: "Post Title", description: "Post description goes here...", imageUrl: "images/Edengate_Interactive_Logo.png" },
-    { title: "Post Title", description: "Post description goes here...", imageUrl: "images/Edengate_Interactive_Logo.png" },
-    { title: "Post Title", description: "Post description goes here...", imageUrl: "images/Edengate_Interactive_Logo.png" },
-    { title: "Post Title", description: "Post description goes here...", imageUrl: "images/Edengate_Interactive_Logo.png" },
-    { title: "Post Title", description: "Post description goes here...", imageUrl: "images/Edengate_Interactive_Logo.png" },
-    { title: "Post Title", description: "Post description goes here...", imageUrl: "images/Edengate_Interactive_Logo.png" },
-    { title: "Post Title", description: "Post description goes here...", imageUrl: "images/Edengate_Interactive_Logo.png" },
-    { title: "Post Title", description: "Post description goes here...", imageUrl: "images/Edengate_Interactive_Logo.png" },
-    { title: "Post Title", description: "Post description goes here...", imageUrl: "images/Edengate_Interactive_Logo.png" },
-    { title: "Post Title", description: "Post description goes here...", imageUrl: "images/Edengate_Interactive_Logo.png" },
-    { title: "Post Title", description: "Post description goes here...", imageUrl: "images/Edengate_Interactive_Logo.png" },
-    { title: "Post Title", description: "Post description goes here...", imageUrl: "images/Edengate_Interactive_Logo.png" },
-    { title: "Post Title", description: "Post description goes here...", imageUrl: "images/Edengate_Interactive_Logo.png" },
-    { title: "Post Title", description: "Post description goes here...", imageUrl: "images/Edengate_Interactive_Logo.png" },
-    { title: "Post Title", description: "Post description goes here...", imageUrl: "images/Edengate_Interactive_Logo.png" },
-    { title: "Post Title", description: "Post description goes here...", imageUrl: "images/Edengate_Interactive_Logo.png" },
-    { title: "Post Title", description: "Post description goes here...", imageUrl: "images/Edengate_Interactive_Logo.png" },
-    { title: "Post Title", description: "Post description goes here...", imageUrl: "images/Edengate_Interactive_Logo.png" },
-    { title: "Post Title", description: "Post description goes here...", imageUrl: "images/Edengate_Interactive_Logo.png" },
-    { title: "Post Title", description: "Post description goes here...", imageUrl: "images/Edengate_Interactive_Logo.png" },
-    { title: "Post Title", description: "Post description goes here...", imageUrl: "images/Edengate_Interactive_Logo.png" },
-    { title: "Post Title", description: "Post description goes here...", imageUrl: "images/Edengate_Interactive_Logo.png" },
-    { title: "Post Title", description: "Post description goes here...", imageUrl: "images/Edengate_Interactive_Logo.png" },
-    { title: "Post Title", description: "Post description goes here...", imageUrl: "images/Edengate_Interactive_Logo.png" },
-    { title: "Post Title", description: "Post description goes here...", imageUrl: "images/Edengate_Interactive_Logo.png" },
-    { title: "Post Title", description: "Post description goes here...", imageUrl: "images/Edengate_Interactive_Logo.png" },
-    { title: "Post Title", description: "Post description goes here...", imageUrl: "images/Edengate_Interactive_Logo.png" },
     // Add more posts as needed
 ];
 
 const postsPerPage = 5; // Number of posts to display per page
 let currentPage = 1; // Current page number
+
+function fetchAndDisplayPosts() {
+    fetch('json/newspost.json')
+        .then(response => response.json())
+        .then(data => {
+            // Store the fetched posts data in a variable
+            const posts = data;
+
+            // Call the functions to display posts and pagination
+            displayPosts(currentPage);
+            displayPagination();
+        })
+        .catch(error => console.error('Error fetching data:', error));
+}
 
 function generatePostHTML(post) {
     let postHTML = `
@@ -124,6 +112,7 @@ function createEllipsis() {
 }
 
 window.onload = function() {
-    displayPosts(currentPage);
-    displayPagination();
+    fetchAndDisplayPosts();
+    //displayPosts(currentPage);
+    //displayPagination();
 };
