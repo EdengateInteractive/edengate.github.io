@@ -21,9 +21,9 @@ function fetchAndDisplayPosts() {
         .catch(error => console.error('Error fetching data:', error));
 }
 
-function generatePostHTML(post) {
+function generatePostHTML(post, index) {
     let postHTML = `
-        <div id="post-card" class="post-card">
+        <div class="post-card" data-post-index="${index}">
             <div class="post-thumbnail">
                 <img src="${post.imageUrl}" alt="${post.title} Image">
             </div>
@@ -45,10 +45,8 @@ function displayPosts(page) {
 
     for (let i = startIndex; i < Math.min(endIndex, posts.length); i++) {
         const post = posts[i];
-        const postElement = document.getElementById("post-card");
-        //postElement.classList.add('post-card');
-        postElement.setAttribute('data-post-index', i);
-        postElement.innerHTML = generatePostHTML(post);
+        const postElement = document.createElement('div');
+        postElement.innerHTML = generatePostHTML(post, i);
         postsContainer.appendChild(postElement);
     }
 
