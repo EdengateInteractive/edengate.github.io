@@ -9,7 +9,7 @@ function fetchAndDisplayPosts() {
         .then(data => {
             data.forEach((post, index) => {
                 post.id = index + 1; // You can use any method to generate IDs
-                post.url = 'newsposts/${post.slug}.html';
+                post.url = `newsposts/${post.slug}.html`;
             });
             
             // Store the fetched posts data in a variable
