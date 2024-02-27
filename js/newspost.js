@@ -9,6 +9,7 @@ function fetchAndDisplayPosts() {
         .then(data => {
             data.forEach((post, index) => {
                 post.id = index + 1; // You can use any method to generate IDs
+                post.url = 'newsposts/${post.slug}.html;
             });
             
             // Store the fetched posts data in a variable
@@ -125,9 +126,11 @@ function updateActivePageButton() {
 }
 
 function navigateToPostPage(postId) {
-    const url = `post.html?postId=${postId}`;
-    
-    window.location.href = url;
+    const post = posts.find(post => post.id === postId);
+    if (post) {
+        const url = post.url;
+        window.location.href = url;
+    }
 }
 
 function attachPostCardClickEventListeners() {
