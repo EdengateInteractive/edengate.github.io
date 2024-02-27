@@ -43,12 +43,21 @@ function displayPosts(page) {
     const startIndex = (page - 1) * postsPerPage;
     const endIndex = startIndex + postsPerPage;
 
+    const postTemplate = document.getElementById("post-template");
+
     for (let i = startIndex; i < Math.min(endIndex, posts.length); i++) {
         const post = posts[i];
-        const postElement = document.getElementById("post-card");
-        //postElement.classList.add('post-card');
-        postElement.setAttribute('data-post-index', i);
-        postElement.innerHTML = generatePostHTML(post);
+        const postElement = postTemplate.content.cloneNode(true);
+        postElement.querySelector('.post-card').setAttribute('data-post-index', i);
+        const postTitle = postElement.querySelector('.post-title');
+        const postDescription = postElement.querySelector('.post-description');
+        const postImage = postElement.querySelector('.post-thumbnail img');
+
+        postTitle.textContent = post.title;
+        postDescription.textContent = post.description;
+        postImage.setAttribute('src', post.imageUrl);
+        postImage.setAttribute('alt', post.title);
+
         postsContainer.appendChild(postElement);
     }
 
