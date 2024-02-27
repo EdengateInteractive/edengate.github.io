@@ -23,7 +23,7 @@ function fetchAndDisplayPosts() {
 
 function generatePostHTML(post) {
     let postHTML = `
-        <div class="post-card">
+        <div id="post-card" class="post-card">
             <div class="post-thumbnail">
                 <img src="${post.imageUrl}" alt="${post.title} Image">
             </div>
@@ -45,8 +45,8 @@ function displayPosts(page) {
 
     for (let i = startIndex; i < Math.min(endIndex, posts.length); i++) {
         const post = posts[i];
-        const postElement = document.createElement('div');
-        postElement.classList.add('post-card');
+        const postElement = document.getElementbyId(post-card);
+        //postElement.classList.add('post-card');
         postElement.setAttribute('data-post-index', i);
         postElement.innerHTML = generatePostHTML(post);
         postsContainer.appendChild(postElement);
