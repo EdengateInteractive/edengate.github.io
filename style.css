@@ -260,6 +260,8 @@ nav {
 
 .article {
     background-color: #202020;
+    padding-top: 30px;
+    padding-bottom: 100px;
 }
 
 .article-media img {
