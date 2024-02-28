@@ -4,5 +4,11 @@
         "slug": "DemoPost",
         "description": "Post description goes here...",
         "imageUrl": "images/Edengate_Interactive_Logo.png"
+    },
+    {
+        "title": "NewsPost",
+        "slug": "NewsPost1",
+        "description": "description here",
+        "imageUrl": "images/Edengate_Interactive_Logo.png"
     }
 ]
