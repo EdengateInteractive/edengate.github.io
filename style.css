@@ -412,7 +412,7 @@ footer {
         border: none;
         border-radius: 1px;
         box-sizing: border-box;
-        margin-left: -50%; /* Center the input relative to its parent */
-        transform: translateX(-50%);
+        display: block; /* Ensure input fields take full width */
+        margin: 0 auto; /* Center the input horizontally */
     }
 }
