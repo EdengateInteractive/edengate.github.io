@@ -406,11 +406,13 @@ footer {
     .form-container input[type="text"],
     .form-container input[type="email"],
     .form-container textarea {
-        width: calc(100% - 20px);
+        width: 200%;
         padding: 10px;
         margin-bottom: 10px;
         border: none;
         border-radius: 1px;
         box-sizing: border-box;
+        margin-left: -50%; /* Center the input relative to its parent */
+        transform: translateX(-50%);
     }
 }
