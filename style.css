@@ -363,3 +363,28 @@ footer {
 .footer-content {
     font-size: 14px;
 }
+
+@media (max-width: 599.95px) {
+    .nav-links {
+        display: none;
+    }
+    .logo {
+        text-align: center;
+    }
+    .nav-links li {
+        display: block;
+        text-align: center;
+        margin: 10px 0;
+    }
+    .post-thumbnail {
+        max-width: 79px;
+        max-height: 50px;
+        margin-right: 10px;
+    }
+    .post-card {
+        width: 90%; /* Adjusted for responsiveness */
+    }
+    .game-section img {
+        max-width: 200px; /* Adjusted for responsiveness */
+    }
+}
