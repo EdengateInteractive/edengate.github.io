@@ -368,11 +368,9 @@ footer {
     .nav-links {
         display: block; /* Change from flex to block */
         background-color: rgba(0, 0, 0, 0.1); /* Background color added for better visibility */
-        position: fixed;
         top: 0;
         left: 0;
         width: 100%;
-        z-index: 999; /* Ensure the navigation links appear above other content */
         padding-top: 20px; /* Adjust the padding as needed */
     }
 
