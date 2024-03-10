@@ -367,7 +367,6 @@ footer {
 @media (max-width: 599.95px) {
     .nav-links {
         display: block; /* Change from flex to block */
-        background-color: rgba(0, 0, 0, 0.1); /* Background color added for better visibility */
         top: 0;
         left: 0;
         width: 100%;
