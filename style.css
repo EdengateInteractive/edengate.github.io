@@ -83,7 +83,8 @@ nav {
 
 /* Style for the background image */
 .featured-news-background img {
-    width: 100%;
+    margin: auto;
+    width: 50%;
     display: block;
     opacity: 0.8; /* Adjust the opacity as needed */
 }
