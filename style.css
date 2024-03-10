@@ -184,15 +184,14 @@ nav {
     margin: 10px;
     width: 1200px;
     max-width: 1200px;
-    border: 1px solid #CCCCCC;
-    border-radius: 4px;
     background-color: #202020;
     transition: transform 200ms ease-in-out, box-shadow 200ms ease-in-out;
 }
 
 .post-card:hover {
     transform: translateX(-7px);
-    box-shadow: 0px 0px 30px rgba(255, 0, 0, 0.5);
+    box-shadow: 0px 0px 20px rgba(255, 0, 0, 0.5);
+    border-radius: 4px;
 }
 
 .post-thumbnail {
