@@ -366,28 +366,20 @@ footer {
 
 @media (max-width: 599.95px) {
     .nav-links {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        display: block; /* Change from flex to block */
         background-color: rgba(0, 0, 0, 0.1); /* Background color added for better visibility */
         position: fixed;
         top: 0;
         left: 0;
         width: 100%;
-        height: 100%;
         z-index: 999; /* Ensure the navigation links appear above other content */
-        padding-top: 20%; /* Adjust the padding as needed to center the links vertically */
-        transform: translateY(-100%);
-        transition: transform 0.3s ease-in-out;
-    }
-    
-    .nav-links.show {
-        transform: translateY(0);
+        padding-top: 20px; /* Adjust the padding as needed */
     }
 
     .nav-links li {
         display: block;
-        margin: 20px 0;
+        margin: 10px 0; /* Adjust margin as needed */
+        text-align: center; /* Center the text */
     }
 
     .logo {
@@ -400,14 +392,17 @@ footer {
         text-decoration: none;
         transition: color 0.3s ease;
     }
+    
     .post-thumbnail {
         max-width: 79px;
         max-height: 50px;
         margin-right: 10px;
     }
+    
     .post-card {
         width: 90%; /* Adjusted for responsiveness */
     }
+    
     .game-section img {
         max-width: 200px; /* Adjusted for responsiveness */
     }
