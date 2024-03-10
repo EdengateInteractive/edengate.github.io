@@ -319,6 +319,10 @@ nav {
     background-color: #9E0000;
 }
 
+.required-label {
+        color: #FFF;
+}
+
 .article {
     background-color: #202020;
     padding-top: 30px;
