@@ -402,4 +402,15 @@ footer {
     .game-section img {
         max-width: 200px; /* Adjusted for responsiveness */
     }
+
+    .form-container input[type="text"],
+    .form-container input[type="email"],
+    .form-container textarea {
+        width: calc(100% - 20px);
+        padding: 10px;
+        margin-bottom: 10px;
+        border: none;
+        border-radius: 1px;
+        box-sizing: border-box;
+    }
 }
