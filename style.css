@@ -380,8 +380,7 @@ footer {
     }
 
     .logo {
-        text-align: center;
-        margin-bottom: 20px; /* Added margin to push the logo down */
+        max-width: 120px;
     }
     
     .nav-links li a {
