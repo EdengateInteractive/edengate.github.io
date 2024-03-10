@@ -3,6 +3,7 @@
 body {
     margin: 0;
     padding: 0;
+    min-height: 100vh;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -62,6 +63,10 @@ nav {
 .logo img {
     max-width: 150px;
     max-height: 150px;
+}
+
+main {
+    flex-grow: 1;
 }
 
 .content {
