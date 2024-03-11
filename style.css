@@ -384,6 +384,22 @@ footer {
         transition: color 0.3s ease;
     }
 
+    .game-section{
+        max-width: 80%;
+    }
+
+    .right-layout .game-section {
+        justify-content: center;
+    }
+    
+    .game-section img {
+        max-width: 150px; /* Adjusted for responsiveness */
+    }
+
+    .game-info {
+        font-size: 10px;
+    }
+
     .posts-container {
         display: flex;
         flex-direction: column;
@@ -413,22 +429,6 @@ footer {
 
     .post-description {
         font-size: 0.9rem;
-    }
-
-    .game-section{
-        max-width: 80%;
-    }
-
-    .right-layout .game-section {
-        justify-content: center;
-    }
-    
-    .game-section img {
-        max-width: 150px; /* Adjusted for responsiveness */
-    }
-
-    .game-info {
-        font-size: 10px;
     }
 
     .form-container label {
