@@ -65,10 +65,6 @@ nav {
     max-height: 150px;
 }
 
-main {
-    flex-grow: 1;
-}
-
 .content {
         text-align: center;
         color: white;
@@ -385,10 +381,6 @@ footer {
         color: white;
         text-decoration: none;
         transition: color 0.3s ease;
-    }
-
-    .main {
-        flex-grow: 0;
     }
 
     .game-section{
