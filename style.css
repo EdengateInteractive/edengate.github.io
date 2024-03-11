@@ -414,9 +414,17 @@ footer {
     .post-description {
         font-size: 0.9rem;
     }
+
+    .game-section{
+        max-width: 80%;
+    }
     
     .game-section img {
-        max-width: 200px; /* Adjusted for responsiveness */
+        max-width: 150px; /* Adjusted for responsiveness */
+    }
+
+    .game-info {
+        font-size: 10px;
     }
 
     .form-container label {
