@@ -420,18 +420,7 @@ footer {
     }
 
     .right-layout .game-section {
-        display: flex;
-        flex-direction: row-reverse;
-    }
-    
-    .right-layout .game-section img {
-        max-width: 300px;
-        margin-left: 20px;
-    }
-
-    .right-layout .game-info {
-        flex: 1;
-        text-align: left;
+        justify-content: center;
     }
     
     .game-section img {
