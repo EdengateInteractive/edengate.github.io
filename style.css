@@ -332,7 +332,8 @@ main {
 }
 
 .required-label {
-        color: #FFF;
+    color: #FFF;
+    padding-top: 10px;
 }
 
 .article {
@@ -427,5 +428,6 @@ footer {
     .required-label {
         color: #FFF;
         margin-left: -80px;
+        padding-top: 20px;
     }
 }
