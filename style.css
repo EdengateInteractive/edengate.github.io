@@ -387,6 +387,10 @@ footer {
         transition: color 0.3s ease;
     }
 
+    .main {
+        flex-grow: 0;
+    }
+
     .game-section{
         max-width: 80%;
     }
