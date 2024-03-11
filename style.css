@@ -387,10 +387,6 @@ footer {
     .game-section{
         max-width: 80%;
     }
-
-    .right-layout .game-section {
-        justify-content: center;
-    }
     
     .game-section img {
         max-width: 150px; /* Adjusted for responsiveness */
