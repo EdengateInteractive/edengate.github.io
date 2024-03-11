@@ -420,13 +420,13 @@ footer {
     }
 
     .right-layout .game-section {
-    justify-content: flex-end;
-    flex-direction: row-reverse;
+    display: grid; /* Use grid for more control */
+    grid-template-columns: auto 1fr; /* Image takes up auto width, info takes up remaining space */
+    grid-column-gap: 20px; /* Adjust the gap between the image and info */
     }
-
+    
     .right-layout .game-section img {
-    margin-left: 20px;
-    margin-right: 20px;
+        justify-self: end; /* Align the image to the end of its grid cell (right side) */
     }
     
     .game-section img {
