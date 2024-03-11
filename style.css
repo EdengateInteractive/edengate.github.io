@@ -403,6 +403,12 @@ footer {
         max-width: 200px; /* Adjusted for responsiveness */
     }
 
+    .form-container label {
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+    }
+
     .form-container input[type="text"],
     .form-container input[type="email"],
     .form-container textarea {
@@ -414,6 +420,6 @@ footer {
         box-sizing: border-box;
         display: block; /* Ensure input fields take full width */
         margin: 0 auto; /* Center the input horizontally */
-        margin-left: -50px;
+        margin-left: -80px;
     }
 }
