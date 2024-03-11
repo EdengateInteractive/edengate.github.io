@@ -264,12 +264,6 @@ main {
     }
 }
 
-@media (max-width: 599.95px) {
-    .post-description {
-        display: none;
-    }
-}
-
 #pagination {
     margin-top: 20px;
 }
@@ -397,7 +391,15 @@ footer {
     }
     
     .post-card {
-        width: 90%; /* Adjusted for responsiveness */
+        width: 80%; /* Adjusted for responsiveness */
+    }
+
+    .post-title {
+    font-size: 1.2rem;
+    }
+
+    .post-description {
+        font-size: 0.9rem;
     }
     
     .game-section img {
