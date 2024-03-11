@@ -385,21 +385,29 @@ footer {
     }
 
     .posts-container {
-    display: flex;
-    flex-direction: column;
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Center items horizontally */
     }
     
     .post-card {
         width: 80%;
         margin-left: 15px;
+        margin-bottom: 20px; /* Add margin bottom for spacing */
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Center content vertically */
+        align-items: center; /* Center content horizontally */
+        padding: 20px;
+        border-radius: 4px;
+        background-color: #202020;
+        transition: transform 200ms ease-in-out, box-shadow 200ms ease-in-out;
     }
 
     .post-thumbnail {
-        flex: 0 0 auto;
         max-width: 79px;
         max-height: 50px;
         margin-right: 10px;
-        overflow: hidden;
     }
 
     .post-thumbnail img {
