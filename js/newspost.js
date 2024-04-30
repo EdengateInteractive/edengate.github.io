@@ -98,24 +98,6 @@ function displayPagination() {
     updateActivePageButton();
 }
 
-function formatDate(dateString) {
-    const options = { year: 'numeric', month: 'long', day: 'numeric' };
-    return new Date(dateString).toLocaleDateString('en-US', options);
-}
-
-function updatePostDates() {
-    const postCards = document.querySelectorAll('.post-card');
-    postCards.forEach((card, index) => {
-        const dateElement = card.querySelector('.date-placeholder');
-        if (dateElement) {
-            const postDate = formatDate(postsData[index].datePosted);
-            dateElement.textContent = postDate;
-        }
-    });
-}
-
-window.addEventListener('DOMContentLoaded', updatePostDates);
-
 function addPageButton(container, pageNumber, text) {
     const pageButton = document.createElement('button');
     pageButton.textContent = text;
