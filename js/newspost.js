@@ -30,7 +30,7 @@ function generatePostHTML(post, index) {
             </div>
             <div class="post-content">
                 <h2 class="post-title">${post.title}</h2>
-                <p class="post-date">Date Posted: <span class="date-placeholder"></span>
+                <p class="post-date">Date Posted: ${post.datePosted}</p>
                 <p class="post-description">${post.description}</p>
             </div>
         </div>`
