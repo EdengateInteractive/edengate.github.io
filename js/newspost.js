@@ -31,6 +31,7 @@ function generatePostHTML(post, index) {
             <div class="post-content">
                 <h2 class="post-title">${post.title}</h2>
                 <p class="post-description">${post.description}</p>
+                <div class="post-date">Date Posted: <span class="date-placeholder"></span></div>
             </div>
         </div>`
     
@@ -96,6 +97,24 @@ function displayPagination() {
 
     updateActivePageButton();
 }
+
+function formatDate(dateString) {
+    const options = { year: 'numeric', month: 'long', day: 'numeric' };
+    return new Date(dateString).toLocaleDateString('en-US', options);
+}
+
+function updatePostDates() {
+    const postCards = document.querySelectorAll('.post-card');
+    postCards.forEach((card, index) => {
+        const dateElement = card.querySelector('.date-placeholder');
+        if (dateElement) {
+            const postDate = formatDate(postsData[index].datePosted);
+            dateElement.textContent = postDate;
+        }
+    });
+}
+
+window.addEventListener('DOMContentLoaded', updatePostDates);
 
 function addPageButton(container, pageNumber, text) {
     const pageButton = document.createElement('button');
