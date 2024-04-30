@@ -234,6 +234,14 @@ nav {
     text-align: left;
 }
 
+.post-date {
+    margin: 0;
+    font-size: 0.75rem;
+    color: white;
+    text-align: left;
+    margin-bottom: 40px;
+}
+
 .post-description {
     margin: 0;
     font-size: 1.2rem;
