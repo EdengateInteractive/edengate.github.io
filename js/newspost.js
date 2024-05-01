@@ -152,6 +152,20 @@ function handleClick(event) {
     }
 }
 
+function handleAccessDeniedProjectCrimson() {
+        const gameSection = document.querySelector('.game-section.left-layout');
+        gameSection.innerHTML = '<div class="game-info"><h2>ACCESS DENIED</h2></div>';
+        setTimeout(function () {
+            gameSection.innerHTML = `
+                <img src="images/Redacted.png" alt="Redacted">
+                <div class="game-info">
+                    <h2>Project Crimson</h2>
+                    <p>[REDACTED]</p>
+                </div>
+            `;
+        }, 2000);
+    }
+
 window.onload = function() {
     fetchAndDisplayPosts();
 };
