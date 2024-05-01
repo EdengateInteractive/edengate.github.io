@@ -355,6 +355,17 @@ nav {
     max-width: 75%;
 }
 
+.PCD1image-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px; /* Adjust as needed */
+}
+
+.PCD1image-container img {
+    max-width: 45%; /* Adjust width as needed */
+    height: auto;
+}
+
 footer {
     color: white;
     text-align: center;
