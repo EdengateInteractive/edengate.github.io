@@ -6,5 +6,5 @@ function handleAccessDeniedProjectCrimson() {
             <h2>Project Crimson</h2>
             <p>[REDACTED]</p>
         `;
-    }, 2000);
+    }, 1000);
 }
