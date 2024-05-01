@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Edengate Interactive | News</title>
+<link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body>
+<header>
+    <nav>
+        <div class="logo">
+            <a href="../index.html"><img src="../images/Edengate_InteractiveNBG.png" alt="Edengate Interactive"></a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../games.html">Games</a></li>
+            <li><a href="../news.html" class="active">News</a></li>
+            <li><a href="../support.html">Support</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <div class="content">
+        <div class="article">
+            <h1 id="article-title" class="article-title">Project Crucible Devlog #1</h1>
+            <h3 id="article-date" class="article-date">April 30 2024</h3>
+            <div id="article-media" class="article-media">
+                <iframe width="1047" height="589" src="https://www.youtube.com/embed/LKf479qDXn4" title="27 Day Progress On a Survival Horror Game | PROJECT CRUCIBLE Dev Log #1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div id="article-content" class="article-content">
+                <p>First devlog of our upcoming game is out.</p>
+                <p>The working title currently for the game is Project Crucible. We chose the name crucible for it's abstract definition,
+                  which states "a place or situation in which concentrated forces interact to cause or influence change or development".
+                  This definition fit very well due to the setting and events that happen within the game.</p>
+            </div>
+        </div>
+    </div>
+</main>
+<footer>
+    <div class="footer-content">
+        &copy; 2024 Edengate Interactive
+    </div>
+</footer>
+</body>
+</html>
