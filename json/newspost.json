@@ -1,9 +1,16 @@
 [
     {
+        "title": "Project Crucible Devlog #1",
+        "slug": "ProjectCrucibleDevlog1",
+        "description": "First devlog for a game we have been working on for nearly the past month.",
+        "imageUrl": "../images/Project Crucible Devlog/ProjectCrucibleDevlog1Thumbnail.png",
+        "datePosted": "Apr 30 2024"
+    },
+    {
         "title": "Website Launch!",
         "slug": "WebsiteLaunch",
         "description": "Website has been launched!",
-        "imageUrl": "images/Edengate_Interactive_Logo.png",
+        "imageUrl": "../images/Edengate_Interactive_Logo.png",
         "datePosted": "Mar 10 2024"
     }
 ]
