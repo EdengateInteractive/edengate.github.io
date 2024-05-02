@@ -364,6 +364,7 @@ nav {
 .PCD1textimage-container img {
     max-width: 45%; /* Adjust width as needed */
     height: auto;
+    margin-left: 20px;
 }
 
 .PCD1image-container {
