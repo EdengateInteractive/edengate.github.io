@@ -356,7 +356,7 @@ nav {
 }
 
 .PCD1textimage-container {
-    display: flex;
+    display: block;
     justify-content: space-between;
     margin-top: 20px; /* Adjust as needed */
 }
