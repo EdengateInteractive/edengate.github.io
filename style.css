@@ -399,6 +399,13 @@ nav {
     margin-right: 20px;
 }
 
+@media (max-width: 599.95px) {
+    .PCD1textimage-container-left-layout img,
+    .PCD1textimage-container-right-layout img {
+        max-width: 100%;
+    }
+}
+
 .PCD1image-container {
     display: flex;
     justify-content: space-between;
