@@ -266,6 +266,14 @@ nav {
 }
 
 @media (max-width: 599.95px) {
+    .posts-container {
+        display: flex
+        flex-direction: column;
+    }
+
+    .post-card {
+    }
+    
     .post-thumbnail {
         max-width: 79px;
         max-height: 50px;
