@@ -408,8 +408,7 @@ nav {
 @media (max-width: 599.95px) {
     .PCD1textimage-container-left-layout img,
     .PCD1textimage-container-right-layout img {
-        max-width: 100%;
-        margin: 0 auto 10px auto;
+        max-width: 60%;
         object-fit: contain;
     }
 }
