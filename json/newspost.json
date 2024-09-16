@@ -1,5 +1,12 @@
 [
     {
+        "title": "Project Crucible Devlog #2",
+        "slug": "ProjectCrucibleDevlog2",
+        "description": "Second devlog.",
+        "imageUrl": "../images/Project Crucible Devlog/ProjectCrucibleDevlog1Image1.png",
+        "datePosted": "Apr 30 2024"
+    },
+    {
         "title": "Project Crucible Devlog #1",
         "slug": "ProjectCrucibleDevlog1",
         "description": "First devlog for a game we have been working on for nearly the past month.",
