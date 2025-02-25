@@ -1,15 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Radley&display=swap');
 
-body {
+html, body {
     margin: 0;
     padding: 0;
-    min-height: 100vh;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
+    height: 100%;
     font-family: 'Radley', serif;
     background-color: #111;
     overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    min-height: 100vh;
+}
+
+main {
+    flex-grow: 1;
 }
 
 header {
@@ -36,10 +43,10 @@ nav {
     list-style: none;
     margin: 0;
     padding: 0;
+    display: flex;
 }
 
 .nav-links li {
-    display: inline;
     margin-right: 20px;
 }
 
@@ -49,14 +56,8 @@ nav {
     transition: color 0.3s ease;
 }
 
-.nav-links li a:hover {
-    color: red;
-}
-
-.nav-links li a:active {
-    color: red;
-}
-
+.nav-links li a:hover,
+.nav-links li a:active,
 .nav-links li a.active {
     color: red;
 }
@@ -72,63 +73,55 @@ nav {
         margin-bottom: 20px;
 }
 
-/* Style for the featured news section */
 .featured-news {
     position: relative;
 }
 
-/* Style for the background image container */
 .featured-news-background {
     position: relative;
     overflow: hidden;
 }
 
-/* Style for the background image */
 .featured-news-background img {
-    margin: auto;
-    width: 50%;
+    width: 100%;
+    height: auto;
     display: block;
-    opacity: 0.8; /* Adjust the opacity as needed */
+    opacity: 0.8;
 }
 
-/* Style for the semi-transparent overlay */
 .overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.2); /* Adjust the opacity as needed */
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
-/* Style for the content overlaid on the image */
 .featured-news-content {
     position: absolute;
-    top: 50%; /* Position the content in the center vertically */
-    left: 50%; /* Position the content in the center horizontally */
-    transform: translate(-50%, -50%); /* Center the content */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
-    color: #fff; /* Text color */
-    z-index: 1; /* Ensure content is above the overlay */
+    color: #fff;
+    z-index: 1;
 }
 
-/* Style for the title */
 .featured-news-content h2 {
     font-size: 2em;
     margin-bottom: 10px;
 }
 
-/* Style for the description */
 .featured-news-content p {
     font-size: 1.2em;
     margin-bottom: 20px;
 }
 
-/* Style for the "Read More" link */
 .featured-news-content .read-more {
     display: inline-block;
-    background-color: #ff9900; /* Button background color */
-    color: #fff; /* Button text color */
+    background-color: #ff9900;
+    color: #fff;
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
@@ -139,8 +132,7 @@ nav {
     align-items: center;
     margin-bottom: 40px;
     max-width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     border-radius: 4px;
     padding: 20px;
     transition: transform 200ms ease-in-out, box-shadow 200ms ease-in-out;
@@ -153,8 +145,7 @@ nav {
 
 .game-section img {
     max-width: 300px;
-    margin-right: 20px;
-    margin-left: 20px;
+    margin: 0 20px;
     object-fit: cover;
 }
 
@@ -171,16 +162,10 @@ nav {
     justify-content: flex-end;
 }
 
-.left-layout .game-info {
-    text-align: left;
-    padding-left: 20px;
-    display: grid;
-}
-
+.left-layout .game-info,
 .right-layout .game-info {
     text-align: left;
-    padding-right: 120px;
-    padding-left: 30px;
+    padding: 20px;
     display: grid;
 }
 
@@ -195,7 +180,7 @@ nav {
     justify-content: center;
     padding: 20px;
     margin: 10px;
-    width: 1200px;
+    width: 100%;
     max-width: 1200px;
     border-radius: 4px;
     background-color: #202020;
@@ -230,32 +215,16 @@ nav {
 }
 
 .post-title {
-    margin: 0;
     font-size: 1.5rem;
     color: white;
     text-align: left;
 }
 
-.post-date {
-    margin: 0;
-    font-size: 0.75rem;
-    color: white;
-    text-align: left;
-    margin-bottom: 40px;
-}
-
+.post-date,
 .post-description {
-    margin: 0;
-    font-size: 1.2rem;
+    font-size: 0.9rem;
     color: white;
-    line-height: 1.5;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
     text-align: left;
-    margin-bottom: 60px;
 }
 
 @media (max-width: 1279.95px) {
@@ -266,10 +235,50 @@ nav {
 }
 
 @media (max-width: 599.95px) {
+    .nav-links {
+        display: block;
+        text-align: center;
+    }
+
+    .nav-links li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .logo {
+        max-width: 120px;
+    }
+
+    .game-section {
+        max-width: 80%;
+    }
+
+    .game-section img {
+        max-width: 150px;
+    }
+
+    .game-info {
+        font-size: 10px;
+    }
+
+    .post-card {
+        width: 80%;
+        margin-left: 5%;
+    }
+
     .post-thumbnail {
-        max-width: 79px;
-        max-height: 50px;
-        margin-right: 10px;
+        max-width: 130px;
+        max-height: 125px;
+    }
+
+    .form-container {
+        padding: 20px;
+        max-width: 100%;
+    }
+
+    .form-container input,
+    .form-container textarea {
+        width: 100%;
     }
 }
 
@@ -433,98 +442,4 @@ footer {
 
 .footer-content {
     font-size: 14px;
-}
-
-@media (max-width: 599.95px) {
-    .nav-links {
-        display: block; /* Change from flex to block */
-        top: 0;
-        left: 0;
-        width: 100%;
-        padding-top: 20px; /* Adjust the padding as needed */
-    }
-
-    .nav-links li {
-        display: block;
-        margin: 10px 0; /* Adjust margin as needed */
-        text-align: center; /* Center the text */
-    }
-
-    .logo {
-        max-width: 120px;
-    }
-    
-    .nav-links li a {
-        color: white;
-        text-decoration: none;
-        transition: color 0.3s ease;
-    }
-
-    .game-section{
-        max-width: 80%;
-    }
-    
-    .game-section img {
-        max-width: 150px; /* Adjusted for responsiveness */
-    }
-
-    .game-info {
-        font-size: 10px;
-    }
-
-    .posts-container {
-        display: block;
-    }
-    
-    .post-card {
-        width: 80%;
-        margin-left: 5%;
-    }
-
-    .post-thumbnail {
-        max-width: 130px;
-        max-height: 125px;
-        margin-right: 10px;
-    }
-
-    .post-thumbnail img {
-        width: 100%;
-        height: auto;
-        object-fit: cover;
-    }
-
-    .post-title {
-        font-size: 1.2rem;
-    }
-
-    .post-description {
-        font-size: 0.9rem;
-    }
-
-    .form-container label {
-        display: block;
-        text-align: left;
-        margin-bottom: 10px;
-        margin-left: -85px;
-    }
-
-    .form-container input[type="text"],
-    .form-container input[type="email"],
-    .form-container textarea {
-        width: 250%;
-        padding: 10px;
-        margin-bottom: 10px;
-        border: none;
-        border-radius: 1px;
-        box-sizing: border-box;
-        display: block; /* Ensure input fields take full width */
-        margin: 0 auto; /* Center the input horizontally */
-        margin-left: -85px;
-    }
-
-    .required-label {
-        color: #FFF;
-        margin-left: -80px;
-        padding-top: 15px;
-    }
 }
