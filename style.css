@@ -429,12 +429,13 @@ nav {
 .video-container {
     flex: 1;
     min-width: 300px;
-    max-width: 100%;
+    max-width: 45%;
+    height: 350px;
 }
 
 .video-container iframe {
     width: 100%;
-    height: auto;
+    height: 100%;
 }
 
 .article-content {
