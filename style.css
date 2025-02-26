@@ -427,9 +427,9 @@ nav {
 }
 
 .video-container {
-    width: 45%;
-    max-width: 560px;
-    height: auto;
+    flex: 1;
+    min-width: 300px;
+    max-width: 100%;
 }
 
 .video-container iframe {
