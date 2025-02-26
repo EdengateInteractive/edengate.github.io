@@ -177,7 +177,7 @@ nav {
 
 .post-card{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     padding: 20px;
     margin: 10px;
     width: 100%;
