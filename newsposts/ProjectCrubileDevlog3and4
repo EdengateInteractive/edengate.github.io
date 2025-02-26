@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Edengate Interactive | News</title>
+<link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body>
+<header>
+    <nav>
+        <div class="logo">
+            <a href="../index.html"><img src="../images/Edengate_InteractiveNBG.png" alt="Edengate Interactive"></a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../games.html">Games</a></li>
+            <li><a href="../news.html" class="active">News</a></li>
+            <li><a href="../support.html">Support</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <div class="content">
+        <div class="article">
+            <h1 id="article-title" class="article-title">Project Crucible Devlog #3 & #4</h1>
+            <h3 id="article-date" class="article-date">February 26 2025</h3>
+            <div id="article-media" class="article-media">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/watch?v=tr2oMhj7cOo" title="Creating a UNIQUE SAVE SYSTEM For Our Survival Horror Game | PROJECT CRUCIBLE Dev Log #3" frameborder="0" allow="web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/watch?v=Svf8Bny5O8U" title="We Added REAL TIME INVENTORY To Our Trench Survival Horror Game | PROJECT CRUCIBLE Dev Log #4" frameborder="0" allow="web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div id="article-content" class="article-content">
+                <p>Happy New Year everyone! I know there has been a delay in news posts, and that was due to holidays. But don't fret, we also have been steadily plugging away on the project.
+                    We've made some great progress that we are proud to share with you.</p>
+                <p>First up, we built a save system that we felt was unique to the genre; homing pigeons. Radios did exist, but were unreliable for sending and recieving information due to the conditions of battle.
+                    So, to combat this, they turned to an unlikely ally, the homing pigeon. One such pigeon is Cher Ami, a homing pigeon that served the French during World War 1
+                    in delivering a message that would help American forces find their lost battatlion of trooops. In fact, during the 1920's and 1930's, Cher Ami was reconized as a World War 1 hero amung children in the U.S. Can you say that about any other bird?
+                <p>Next, we added a diegetic inventory in the form of a satchel that the player carries around. Having an immersive way of storing and accessing items we pick up is a big deal for us as we strive to bring immersion.
+                    In fact, there were several iterations of the inventory UI where it was non-diegetic, but we ultimately decided upon this. Ammo is stored on the left, and items the player wields is stored on the right.
+                    This limited style of inventory prevents the player from hoarding items and makes them think about how they use items and progress. This also prevents the issue of the player stuck playing inventory tetris, which draws them out of game and ruins immersion.
+                <p>Those are the highlights of our work, but aren't the only things we added. Check out the devlogs for the extra juicy details, and maybe share your feedback. See you next time!
+                <p>Edengate Interactive</p>
+            </div>
+        </div>
+    </div>
+</main>
+<footer>
+    <div class="footer-content">
+        &copy; 2024 Edengate Interactive
+    </div>
+</footer>
+</body>
+</html>
