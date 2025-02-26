@@ -324,7 +324,7 @@ nav {
     }
 
     .video-container iframe {
-        width: 90%;
+        width: 100%;
     }
 
     .form-container {
@@ -427,8 +427,9 @@ nav {
 }
 
 .video-container {
-    width: 560px;
-    height: 315px;
+    width: 45%;
+    max-width: 560px;
+    aspect-ratio: 16 / 9;
     flex-shrink: 0;
 }
 
