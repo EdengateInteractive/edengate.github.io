@@ -227,14 +227,7 @@ nav {
     text-align: left;
 }
 
-@media (max-width: 1279.95px) {
-    .post-thumbnail {
-        max-width: 209px;
-        max-height: 133px;
-    }
-}
-
-@media (max-width: 599.95px) {
+@media (max-width: 768px) {
     .nav-links {
         display: block;
         text-align: center;
@@ -279,6 +272,48 @@ nav {
     .form-container input,
     .form-container textarea {
         width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .logo img {
+        max-width: 100px;
+    }
+
+    .game-section {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        max-width: 90%;
+    }
+
+    .game-section img {
+        max-width: 100%;
+        margin: 10px 0;
+    }
+
+    .game-info {
+        text-align: center;
+        font-size: 14px;
+        max-width: 100%;
+    }
+
+    .post-card {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .post-thumbnail {
+        max-width: 100px;
+        max-height: 100px;
+    }
+
+    .footer-content {
+        font-size: 12px;
+    }
+
+    .video-container iframe {
+        width: 90%;
     }
 }
 
@@ -368,7 +403,7 @@ nav {
 .video-container {
     position: relative;
     width: 100%;
-    padding-bottom: 56.25%; /* 16:9 aspect ratio (height: width) */
+    padding-bottom: 56.25%;
     overflow: hidden;
 }
 
@@ -392,11 +427,11 @@ nav {
 .PCD1textimage-container-left-layout {
     display: flex;
     justify-content: space-between;
-    margin-top: 20px; /* Adjust as needed */
+    margin-top: 20px;
 }
 
 .PCD1textimage-container-left-layout img {
-    max-width: 45%; /* Adjust width as needed */
+    max-width: 45%;
     height: auto;
     margin-left: 20px;
     object-fit: contain;
@@ -405,11 +440,11 @@ nav {
 .PCD1textimage-container-right-layout {
     display: flex;
     justify-content: space-between;
-    margin-top: 20px; /* Adjust as needed */
+    margin-top: 20px;
 }
 
 .PCD1textimage-container-right-layout img {
-    max-width: 45%; /* Adjust width as needed */
+    max-width: 45%;
     height: auto;
     margin-right: 20px;
     object-fit: contain;
@@ -426,11 +461,11 @@ nav {
 .PCD1image-container {
     display: flex;
     justify-content: space-between;
-    margin-top: 20px; /* Adjust as needed */
+    margin-top: 20px;
 }
 
 .PCD1image-container img {
-    max-width: 45%; /* Adjust width as needed */
+    max-width: 45%;
     height: auto;
 }
 
