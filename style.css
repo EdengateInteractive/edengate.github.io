@@ -177,10 +177,10 @@ nav {
 
 .post-card{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     padding: 20px;
     margin: 10px;
-    width: 100%;
+    width: 1200px;
     max-width: 1200px;
     border-radius: 4px;
     background-color: #202020;
