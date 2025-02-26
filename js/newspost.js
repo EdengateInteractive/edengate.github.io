@@ -1,21 +1,19 @@
 let posts = [];
 
-const postsPerPage = 5; // Number of posts to display per page
-let currentPage = 1; // Current page number
+const postsPerPage = 5;
+let currentPage = 1;
 
 function fetchAndDisplayPosts() {
     fetch('json/newspost.json')
         .then(response => response.json())
         .then(data => {
             data.forEach((post, index) => {
-                post.id = index + 1; // You can use any method to generate IDs
+                post.id = index + 1;
                 post.url = `newsposts/${post.slug}.html`;
             });
             
-            // Store the fetched posts data in a variable
             posts = data;
 
-            // Call the functions to display posts and pagination
             displayPosts(currentPage);
             displayPagination();
         })
@@ -65,32 +63,26 @@ function displayPagination() {
     let startPage = Math.max(currentPage - Math.floor(maxVisiblePages / 2), 1);
     let endPage = Math.min(startPage + maxVisiblePages - 1, totalPages);
 
-    // Adjust startPage and endPage if the current page is near the first or last page
     if (endPage - startPage + 1 < maxVisiblePages) {
         startPage = Math.max(endPage - maxVisiblePages + 1, 1);
     }
 
-    // Add "First Page" button
     if (currentPage > 1) {
         addPageButton(paginationContainer, 1, "First");
     }
 
-    // Add ellipsis before page buttons if necessary
     if (startPage > 1) {
         paginationContainer.appendChild(createEllipsis());
     }
 
-    // Add page buttons
     for (let i = startPage; i <= endPage; i++) {
         addPageButton(paginationContainer, i, i);
     }
 
-    // Add ellipsis after page buttons if necessary
     if (endPage < totalPages) {
         paginationContainer.appendChild(createEllipsis());
     }
 
-    // Add "Last Page" button
     if (currentPage < totalPages) {
         addPageButton(paginationContainer, totalPages, "Last");
     }
