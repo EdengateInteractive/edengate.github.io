@@ -360,7 +360,7 @@ nav {
 }
 
 .article-media img {
-    max-width: 50%;
+    max-width: 40%;
     height: auto;
     object-fit: contain;
 }
@@ -385,7 +385,7 @@ nav {
     text-align: left;
     margin-left: auto;
     margin-right: auto;
-    max-width: 100%;
+    max-width: 85%;
     padding: 0 10px;
 }
 
