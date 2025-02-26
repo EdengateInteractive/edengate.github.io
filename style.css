@@ -429,13 +429,12 @@ nav {
 .video-container {
     width: 45%;
     max-width: 560px;
-    aspect-ratio: 16 / 9;
-    flex-shrink: 0;
+    height: auto;
 }
 
 .video-container iframe {
     width: 100%;
-    height: 100%;
+    height: auto;
 }
 
 .article-content {
