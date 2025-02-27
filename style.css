@@ -483,6 +483,24 @@ nav {
     height: auto;
 }
 
+.social-links {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-button img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.social-button img:hover {
+    transform: scale(1.2);
+    opacity: 0.8;
+}
+
 footer {
     color: white;
     text-align: center;
