@@ -83,9 +83,11 @@ nav {
 }
 
 .featured-news-background img {
-    width: 100%;
+    width: auto;
+    max-width: 90%;
     height: auto;
     display: block;
+    margin: 0 auto;
     opacity: 0.8;
 }
 
