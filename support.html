@@ -44,18 +44,11 @@
         </form>
     </div>
 </main>
-<footer>
-    <div class="footer-content">
-        <div class="social-links">
-            <a href="https://youtube.com/@EdengateInteractive" target="_blank" class="social-button youtube">
-                <img src="images/youtube-icon.png" alt="YouTube">
-            </a>
-            <a href="https://bsky.app/profile/edengateint.bsky.social" target="_blank" class="social-button bluesky">
-                <img src="images/bluesky-icon.png" alt="Bluesky">
-            </a>
-        </div>
-        <p>&copy; 2024 Edengate Interactive | All Rights Reserved</p>
-    </div>
-</footer>
+<div id="footer-container"></div>
+<script>
+    fetch("footer.html")
+    .then(response => response.text())
+    .then(data => document.getElementById("footer-container").innerHTML = data);
+</script>
 </body>
 </html>
